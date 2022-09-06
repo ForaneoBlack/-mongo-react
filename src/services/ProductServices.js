@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 export class ProductServices {
-    baseUrl = "http://localhost:8080/api/productos/";
+    //baseUrl = "http://localhost:8080/api/productos/";
+    baseUrl = "https://productos-api-foraneo.herokuapp.com/api/productos/";
 
     create(product){
         return axios.post(this.baseUrl+"product/",product).then( res => res.data);
